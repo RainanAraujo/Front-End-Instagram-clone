@@ -1,26 +1,47 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 244px;
+  width: 335px;
   background-color: #fff;
   border-right: 1px #d8d8d8 solid;
-  padding: 24px 16px;
-  img {
-    width: 130px;
-  }
-  .menuButton {
-    display: flex;
-    margin: 16px 0;
-    width: 100%;
-    padding: 8px;
-    align-items: center;
-    column-gap: 8px;
-    background-color: transparent;
-    border: none;
-    border-radius: 30px;
-    &:hover {
-      background-color: #f8f8f8;
-      transition: 0.5s;
+  padding: 4px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .logo {
+    padding: 12px 8px;
+    padding-top: 22px;
+    img {
+      width: 116px;
     }
   }
+`;
+
+export const MenuButton = styled.button`
+  display: flex;
+  margin: 16px 0;
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  font-size: 1.6rem;
+  align-items: center;
+  column-gap: 10px;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  border-radius: 30px;
+  ${(props) =>
+    props.active &&
+    css`
+      font-weight: 600;
+    `}
+  cursor: pointer;
+  &:hover {
+    background-color: #f8f8f8;
+    transition: 0.5s;
+  }
+`;
+
+export const AvatarImage = styled.img`
+  height: 28px;
 `;
