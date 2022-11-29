@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
   min-height: 100vh;
   background-color: #f9f9f9;
   display: flex;
+
   flex-direction: row;
 
   .content {
-  }
-  .feed {
-    width: 500px;
-    height: 400px;
-    background-color: white;
+    width: 470px;
+    margin-right: 24px;
   }
 
   .wrapperContent {
@@ -23,5 +20,16 @@ export const Container = styled.div`
   }
   .sidebar {
     width: 335px;
+  }
+  .stories {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    column-gap: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d1d1;
   }
 `;

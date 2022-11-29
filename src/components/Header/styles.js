@@ -2,6 +2,9 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 335px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   background-color: #fff;
   border-right: 1px #d8d8d8 solid;
   padding: 4px 12px;
@@ -22,7 +25,6 @@ export const MenuButton = styled.button`
   margin: 16px 0;
   width: 100%;
   padding: 10px;
-  font: inherit;
   font-size: 1.6rem;
   align-items: center;
   column-gap: 10px;
