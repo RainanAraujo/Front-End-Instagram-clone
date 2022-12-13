@@ -8,7 +8,7 @@ import {
   List,
 } from "phosphor-react";
 import { Container, AvatarImage, MenuButton } from "./styles";
-import Avatar from "../../assets/images/avatar.svg";
+import Avatar from "../../assets/images/avatar.jpg";
 
 import InstagramLogo from "../../assets/images/instagram-logo.svg";
 
@@ -22,38 +22,38 @@ export default function Header() {
         <nav>
           <MenuButton className="menuButton" active={true}>
             <House size={28} weight="fill" />
-            Página inicial
+            <span>Página inicial</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <MagnifyingGlass size={28} />
-            Pesquisa
+            <span>Pesquisa</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <Compass size={28} />
-            Explorar
+            <span>Explorar</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <MessengerLogo size={28} />
-            Mensagens
+            <span>Mensagens</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <Heart size={28} />
-            Notifications
+            <span>Notifications</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <PlusCircle size={28} />
-            Create
+            <span>Create</span>
           </MenuButton>
           <MenuButton className="menuButton">
             <AvatarImage src={Avatar} />
-            Perfil
+            <span>Perfil</span>
           </MenuButton>
         </nav>
       </div>
       <div className="options">
         <MenuButton className="menuButton">
           <List size={28} />
-          Mais
+          <span>Mais</span>
         </MenuButton>
       </div>
     </Container>

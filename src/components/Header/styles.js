@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 335px;
+  width: 332px;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -18,6 +18,15 @@ export const Container = styled.div`
       width: 116px;
     }
   }
+  @media (max-width: 1400px) {
+    width: 232px;
+  }
+  @media (max-width: 1200px) {
+    width: auto;
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const MenuButton = styled.button`
@@ -30,6 +39,7 @@ export const MenuButton = styled.button`
   column-gap: 10px;
   background-color: transparent;
   border: none;
+
   appearance: none;
   border-radius: 30px;
   ${(props) =>
@@ -38,9 +48,16 @@ export const MenuButton = styled.button`
       font-weight: 600;
     `}
   cursor: pointer;
+
   &:hover {
     background-color: #f8f8f8;
     transition: 0.5s;
+  }
+
+  @media (max-width: 1200px) {
+    span {
+      display: none;
+    }
   }
 `;
 

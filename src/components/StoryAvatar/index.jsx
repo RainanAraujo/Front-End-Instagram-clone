@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import Avatar from "../../assets/images/avatar.svg";
+import Avatar from "../../assets/images/avatar.jpg";
 
 export default function StoryAvatar({ name, size = "medium" }) {
   return (
