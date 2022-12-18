@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -16,14 +16,19 @@ export const Container = styled.div`
     overflow: hidden;
   }
   .avatar {
-    background: radial-gradient(
-      circle at 33% 100%,
-      #fed373 4%,
-      #f15245 30%,
-      #d92e7f 62%,
-      #9b36b7 85%,
-      #515ecf
-    );
+    ${(props) =>
+      !props.borderColorful &&
+      css`
+        background: radial-gradient(
+          circle at 33% 100%,
+          #fed373 4%,
+          #f15245 30%,
+          #d92e7f 62%,
+          #9b36b7 85%,
+          #515ecf
+        );
+      `}
+
     border-radius: 100%;
     width: ${(props) => (props.size === "small" ? 38 : 58)}px;
     height: ${(props) => (props.size === "small" ? 38 : 58)}px;

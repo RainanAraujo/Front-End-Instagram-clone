@@ -9,15 +9,9 @@ export default function App() {
     <Container>
       <Header />
       <div className="wrapperContent">
-        <div className="content">
+        <div className="mainContent">
           <div className="stories">
-            <StoryAvatar name="guh_enzo" />
-            <StoryAvatar name="alexia" />
-            <StoryAvatar name="bina_ps_" />
-            <StoryAvatar name="vicktor" />
-            <StoryAvatar name="jadson_hudson" />
-            <StoryAvatar name="heloisaguimaraes" />
-            <StoryAvatar name="lucas" />
+            <StoryAvatar name="user_monitoria" historyData={{ image: [] }} />
           </div>
           <div className="feed">
             <Post

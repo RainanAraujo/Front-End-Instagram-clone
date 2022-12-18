@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   flex-direction: row;
 
-  .content {
+  .mainContent {
     width: 470px;
     margin-right: 24px;
   }
